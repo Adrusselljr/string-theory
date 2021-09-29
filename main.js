@@ -151,31 +151,3 @@ function crazyCase(str) {
 console.log(crazyCase("hello"))
 console.log(crazyCase("multiple words here"))
 console.log(crazyCase("YELLING"))
-
-function crazyCase2ReturnOfCrazyCase(str) {
-
-    let output = ""
-    for(let i = 0; i < str.length; i++) {
-        if(i % 2 === 0) {
-            if(str[i] === " ") {
-                continue
-            }
-            else {
-                output += str[i].toLowerCase()
-            }
-        }
-        else {
-            if(str[i] === " ") {
-                continue
-            }
-            else {
-                output += str[i].toUpperCase()
-            }
-        }
-    }
-    return output
-
-}
-console.log(crazyCase2ReturnOfCrazyCase("hello"))
-console.log(crazyCase2ReturnOfCrazyCase("multiple words here"))
-console.log(crazyCase2ReturnOfCrazyCase("YELLING"))
