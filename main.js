@@ -78,14 +78,14 @@ console.log(repeatIt("oh hi!", 8))
 function truncate(str, num) {
 
     let output = ""
-    for(let i = 0; i < 15; i++) {
+    for(let i = 0; i < num; i++) {
         output += str[i]
     }
     return output + "..."
 
 }
-console.log(truncate("The fault, dear Brutus, is not in our stars, but in ourselves."))
-console.log(truncate("Well, that's just, like, your opinion man."))
+console.log(truncate("The fault, dear Brutus, is not in our stars, but in ourselves.", 15))
+console.log(truncate("Well, that's just, like, your opinion man.", 15))
 
 function ciEmailify(str) {
 
